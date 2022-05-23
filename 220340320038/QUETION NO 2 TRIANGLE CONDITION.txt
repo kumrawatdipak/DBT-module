@@ -1,0 +1,12 @@
+USE EXAM;
+create FUNC1(A NUMBER,B NUMBER,C NUMBER)
+RETURN BOOLEAN AS INVALID TRIANGLE TRIANGLE EXCEPTION ;
+
+BEGIN
+IF   (A+B>=C AND B+C>=A AND C+A>=B)
+THEN TRUE;
+else
+  FALSE;
+  END IF;
+  exception when invalid triangle
+  
